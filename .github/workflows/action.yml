@@ -39,6 +39,6 @@ jobs:
             -H "Content-Type: multipart/form-data" \
             -H "X-Api-Key:1DMIXAnGtTIeTQDddlHSvpj6d3as174S" \
             -F "autoCreate=true" \
-            -F "projectName=${REPO_NAME}" \
-            -F "projectVersion=${VERSION}" \
+            -F "projectName=tepy28" \
+            -F "projectVersion=1.2.2" \
             -F "bom=@output.xml"
