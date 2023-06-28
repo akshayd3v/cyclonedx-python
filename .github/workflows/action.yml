@@ -41,4 +41,4 @@ jobs:
             -F "autoCreate=true" \
             -F "projectName=tepy28" \
             -F "projectVersion=1.2.2" \
-            -F "bom=@output.xml"
+            -F "bom=@./reports/bom.xml"
