@@ -20,11 +20,17 @@ jobs:
         uses: AppThreat/cdxgen-action@v1
         with:
           output: './reports/bom.xml'
+      - name: Publish Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: output-artifact
+          path: ./reports/bom.xml
+
       - name: Download Output File
         uses: actions/download-artifact@v2
         with:
-         name: output-artifact
-         path: ./reports/bom.xml
+          name: output-artifact
+          path: ./reports
 
 
       - name: Save SBOM
