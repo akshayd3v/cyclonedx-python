@@ -1,0 +1,14 @@
+name: test-action
+on: push
+jobs:
+  myJob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cryptosoft-SBOM-generator
+        id: Cryptosoft-SBOM-generator
+        uses: CryptosoftInc/Dependency-Track@1.0.0
+        with:
+          dt-url:  "https://dt-api.staging.cryptosoft.com/api/v1/bom"
+          api-key: '1DMIXAnGtTIeTQDddlHSvpj6d3as174S'
+          project-name: "Python-28-June"
+          project-version: "1.2.3"
