@@ -15,6 +15,10 @@ jobs:
 
       - name: Install dependencies with Poetry
         run: poetry install --no-root
+      - name: Capture installed packages
+        run: |
+          poetry export --format requirements.txt --output requirements.txt
+          pip freeze > requirements.freeze.txt
       - name: Generate SBOM
         id: sbom
         uses: AppThreat/cdxgen-action@v1
