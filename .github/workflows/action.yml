@@ -8,8 +8,6 @@ jobs:
       - uses: actions/checkout@v2
       - name: Setup Python
         uses: actions/setup-python@v3.1.4
-#       - name: Install tool
-#         run: pip install poetry
       - name: Install tool
         run: pip install cyclonedx-bom 
       - name: Generate BOM
@@ -23,6 +21,6 @@ jobs:
             -H "Content-Type: multipart/form-data" \
             -H "X-Api-Key:1DMIXAnGtTIeTQDddlHSvpj6d3as174S" \
             -F "autoCreate=true" \
-            -F "projectName=python7test" \
+            -F "projectName=python-test-29June" \
             -F "projectVersion=1.2.2" \
             -F "bom=@sbom.xml"
