@@ -9,7 +9,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v3.1.4
       - name: Install tool
-        run: poetry add cyclonedx-bom 
+        run: pip install cyclonedx-bom 
       - name: Generate BOM
         id: sbom
         run: |
