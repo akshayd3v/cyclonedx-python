@@ -15,7 +15,7 @@ jobs:
       - name: Generate BOM
         id: sbom
         run: |
-             cyclonedx-py --poetry  --format xml - o sbom.xml
+             cyclonedx-py --poetry --format xml -o sbom.xml
              
       - name: Submit SBOM
         run: |
