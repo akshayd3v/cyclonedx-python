@@ -8,8 +8,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: Setup Python
         uses: actions/setup-python@v3.1.4
-      - name: Install tool
-        run: pip install poetry
+#       - name: Install tool
+#         run: pip install poetry
       - name: Install tool
         run: pip install cyclonedx-bom 
       - name: Generate BOM
