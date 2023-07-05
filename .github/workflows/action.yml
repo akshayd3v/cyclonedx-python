@@ -17,10 +17,10 @@ jobs:
              
       - name: Submit SBOM
         run: |
-          curl -k -X POST "https://dt-api-kkloeckner-llc.staging.cryptosoft.com/api/v1/bom" \
+          curl -k -X POST "https://dt-api.staging.cryptosoft.com/api/v1/bom" \
             -H "Content-Type: multipart/form-data" \
-            -H "X-Api-Key:yx2ZOrANGcuYonKkkeXcOQp77xT2XqvA" \
+            -H "X-Api-Key:1DMIXAnGtTIeTQDddlHSvpj6d3as174S" \
             -F "autoCreate=true" \
             -F "projectName=Testproject3" \
-            -F "projectVersion=1.0" \
+            -F "projectVersion=1.0.2" \
             -F "bom=@sbom.xml"
