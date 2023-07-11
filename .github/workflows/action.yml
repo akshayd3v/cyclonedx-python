@@ -23,6 +23,6 @@ jobs:
             -F "autoCreate=true" \
             -F "projectName=Testjuly111" \
             -F "projectVersion=1.9.SNAPSHOT" \
-            -F "parentName=Testproject3" \
-            -F "parentVersion=1.0.2" \
+            -F "parentName=" \
+            -F "parentVersion=" \
             -F "bom=@sbom.xml"
