@@ -21,8 +21,8 @@ jobs:
             -H "Content-Type: multipart/form-data" \
             -H "X-Api-Key:1DMIXAnGtTIeTQDddlHSvpj6d3as174S" \
             -F "autoCreate=true" \
-            -F "projectName=Testjuly11" \
-            -F "projectVersion=1.8" \
+            -F "projectName=Testjuly111" \
+            -F "projectVersion=1.9.SNAPSHOT" \
             -F "parentName=Testproject3" \
             -F "parentVersion=1.0.2" \
             -F "bom=@sbom.xml"
